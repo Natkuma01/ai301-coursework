@@ -1,39 +1,46 @@
-# Scope: where to look, and who is looking
+# Scope: where your issue lives, and the rules of the room
 
 <!--
-This file is the skill's field of view. The rubric (rubric.md) decides
-whether an issue is GOOD; the scope decides which issues are candidates
-at all, and whose hands the issue would land in. It applies in live mode
-only: in eval mode the bundle is the whole world and this file is
-ignored.
+This file is the skill's field of view, live mode only: in eval mode
+the bundle is the whole world and this file is ignored. The rubric
+(rubric.md) decides whether a package is READY; the scope decides which
+issues a package may belong to at all, and what the house rules are
+where that issue lives.
 
-Two parts. Staff wrote the first; you write the second.
+Staff wrote this file. It ships filled; you do not edit it this week.
 -->
 
-## Where candidates come from
+## Where your issue lives
 
-Only issues in the course's Path Review repository are candidates:
+Only issues in the course's Path Review repository are in scope this
+week:
 
-- Repo: `codepath/pathreview-ai301-fa26-s1`<!-- paste your section's repo from the Unit 1 Check-In page -->
+- Repo: codepath/pathreview-ai301-fa26-s1
 
-Do not search, fetch, or grade issues from any other repository, however
-promising. The wider GitHub comes later in the course; for now the field
-is Path Review.
+If the repo line above still reads as a bracketed placeholder, your
+cohort's copy has not been finalized: stop and ask your instructor for
+the Path Review repo link before running live mode. Eval runs never
+read this file, so the harness and the eval bar work either way.
 
-**Path Review house rule.** Path Review is a classroom, and your
-classmates are not strangers. Ignore the usual claim signals here: other
-students' claim comments (and there may be several on one issue) do not
-block an issue, and finding some on the issue you want is normal. Claim
-anyway: course credit attaches to the pull request you open, not to
-whether it merges, so a shared issue costs nobody anything. Everything
-else in the rubric applies as written.
+Your package must belong to your chosen issue from Unit 1 (or the
+house issue the instructor routed you to). Do not grade packages for
+issues in any other repository, however tempting; the wider GitHub
+comes later in the course.
 
-## Your fit profile
+## Path Review house rules
 
-<!-- YOU write this part: a few sentences about you. What languages and
-tools you have actually used, what you want to get better at, anything
-you want to avoid. The skill uses this only to RANK the issues your
-rubric accepts, never to change a verdict: fit cannot rescue an issue
-your rubric rejects, and cannot sink one it accepts. -->
+Path Review is a classroom, and your classmates are not strangers.
+Three rules are different here than in the wild:
 
-(Write a few sentences here.)
+- **A classmate's claim does not block you.** Other students' claim
+  comments on your issue (and there may be several) do not make it
+  claimed. Post your own claim anyway; this course is the coordination
+  channel that strangers do not have.
+- **Post your own repro comment, even on a shared issue.** If a
+  classmate already posted a reproduction, yours still goes up. Never
+  piggyback ("same as above, can confirm"): your proof is your work,
+  produced from your environment, in your words.
+- **Credit attaches to the work you post, not to being first.** Course
+  credit rides on the pull request you will open and the comments you
+  post along the way, not on whether someone else got there earlier,
+  so a shared issue costs nobody anything.

@@ -1,31 +1,29 @@
-# AI301 Unit 1 starter: issue-select
+# ai301-coursework
 
-Materials for Unit 1 of AI301 (issue selection). This repo holds the
-week's runnable artifacts: the issue-selection skill and its eval
-harness. All instructions live on the course portal (Overview,
-Activity, and Check-In tabs for Unit 1); this repo is the package those
-pages tell you to install and run.
+This is your one repository for the whole course. You create it in unit 1
+from the course template, and its link is the whole submission at every
+check-in; graders open the folder for that unit's work.
 
-## What's here
+## What lives where
 
-- `skill/`: the issue-selection skill for Claude Code, complete except
-  for one file: `skill/rubric.md` ships as an empty template. Writing
-  the rubric is the Unit 1 deliverable.
-- `eval/`: the eval harness, the gold labels, and 24 frozen issue
-  bundles (20 scored plus the 4 calibration issues from the in-class
-  activity). See `eval/README.md` for the full run and output guide.
+- `tools/`: your installed skill folders, one per unit in Beat 1. Unit 1
+  is `issue-select/`, unit 2 `repro-check/`, unit 3 `plan-check/`, unit 4
+  `pr-precheck/`. Upload the current files from your installed copy
+  (`~/.claude/skills/<skill>/`) when you submit.
+- `beat-1-sandbox/`: one folder per unit for units 1-4. Each holds that
+  unit's write-up (its links, a short reflection, and your account of the
+  eval iterations behind the run) and `eval-run.txt`, one complete eval
+  run written by the harness itself with `--save-run`. Unit 3's folder
+  also holds your `plan.md`.
+- `beat-2-contribution/`: `contribution-story.md` is Assignment 5, the
+  graded story of your real contribution, built across units 5-8 and
+  submitted once. A second contribution is welcome and never graded: copy
+  `extra-round-template.md` to `contribution-story-2.md`.
+- `beat-3-portfolio/`: `toolkit-portfolio.md` is Assignment 6, the unit-9
+  toolkit portfolio. It is the skeleton you fill in unit 9; until then it
+  waits.
 
-## Install the skill
-
-Copy the whole `skill/` folder to `~/.claude/skills/issue-select/`
-(create the folders if they do not exist). Edit your rubric inside that
-installed copy and point the harness at the same file, so eval runs and
-live runs share one canonical rubric.
-
-## Run the eval
-
-From `eval/`, with the Claude Code CLI installed:
-
-    python3 run_eval.py --rubric path/to/your-rubric.md
-
-`--limit 3` gives a smoke run. Full docs: `eval/README.md`.
+In units 1-4 everything you upload goes to two places: `tools/` for that
+unit's skill folder, and `beat-1-sandbox/unit-N/` for its write-up and
+eval run. Beats 2 and 3 are one file each, and you submit the same repo
+link every unit.
