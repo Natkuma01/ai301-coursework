@@ -77,4 +77,8 @@ After the change:
 
 ## Deviations
 
-The implementation followed this plan. No deviations were needed.
+The implementation followed the planned behavior and test scope. I made one
+small documentation-only adjustment: the `_parse_json_output()` docstring now
+says "Parsed JSON object" instead of "Parsed JSON dict." I did not change the
+helper's behavior; the wording matches the new guards that ensure it receives
+only dictionary-shaped JSON.
